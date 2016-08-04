@@ -1,0 +1,678 @@
+@import 'global.css';
+/*-------------------------------
+-------------Custom--------------
+-------------------------------*/
+body { font-size: 100%; font-family: "Source Sans Pro", sans-serif; background: rgba(34,34,34,.52) url("../img/bg-main.png") center top no-repeat fixed; background-size: cover;}
+a { text-decoration: none; color: #222;}
+.nobullets{list-style:none;margin:0;padding:0}
+.name{ font-size: 2rem; color: #fff; position: relative; z-index: 2;}
+.titles{ font-size: 1.17rem; color: #fff; padding: 2.5em 0; text-align: center;}
+#f-p2{ font-size: .75em;}
+.copyright{ font-size: .75em;}
+
+.twitter-follower{background:#FFFFFF;}
+/*-------------------------------
+--------------Logo---------------
+-------------------------------*/
+/*logo for empty project section */
+.grid-logo { display:block; width:75px; height:75px; -webkit-border-radius: 50%; -moz-border-radius: 50%;
+ border-radius: 50%; border:5px solid #eee; margin-bottom:30px; background-color:#eee; margin:35px auto;}
+ /* H logo style in navigation bar */
+.H-logo{ max-height: 90px; margin:0 auto;}
+ /* H logo style in footer bar */
+#H-logo{ height: 2.25em; margin: 22px 50px 0px 45px; border: 2px solid #fff;}
+
+
+/*----------Section 1------------
+--------------Home---------------
+-------------------------------*/
+.section-1 {
+  padding: 15% 0 80% 0;
+  text-align: center;
+  position: relative;
+}
+.section-1:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,#03334f,#dc4225);
+		opacity: .6;
+  }
+
+
+/*----------Section 2------------
+--------------About--------------
+-------------------------------*/
+.section-2 {background-color: #222; text-align: center; position: relative; padding: 3%; color: #fff;}
+.about-me{ border-top: 1px solid #fff; border-bottom: 1px solid #fff; padding: 20px 0px 20px; width: 80%; margin: 0px auto; line-height: 3em;}
+.section-2 h2{ font-size:1em; font-style: oblique;}
+.section-2 h3{ font-size:1em;}
+/*---------Section 3-------------
+------------Projects-------------
+-------------------------------*/
+.section-3 {padding-bottom: 3em; text-align: center; position: relative;}
+.section-3:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,#03334f,#dc4225);
+		opacity: .6;
+  }
+.des-title {with: 100%; height: 3em;}
+.grid-clearer { clear:both;}
+.grid-container{ width: 80%; margin: 0 auto; position: relative;}
+.grid-client h2, .grid-client h3 { font-size:.75rem; color:#888; padding:0px; margin:0px;}
+.grid-client h3 { font-weight:100; margin-top:0px; padding-bottom: .75em;}
+.grid-client img { width: 100%; display: block; margin-bottom: .5em; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);}
+.grid-client {
+  width: 50%;
+  background-color:#fff;
+  text-align:center;
+  float:left;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  border:1px solid #f0f0f0;
+  cursor:pointer;}
+
+.grid-client:hover {
+  -ms-transform: scale(1.1,1.1); /* IE 9 */
+  -webkit-transform: scale(1.1,1.1); /* Safari */
+  transform: scale(1.1,1.1);
+  -webkit-box-shadow: 10px 10px 91px 0px rgba(193,79,82,1);
+  -moz-box-shadow: 10px 10px 91px 0px rgba(193,79,82,1);
+  box-shadow: 10px 10px 91px 0px rgba(193,79,82,1);
+  z-index:9999;
+  border-right:1px solid transparent;
+  border-bottom:1px solid transparent;
+  cursor:pointer;
+  background-color:#fff;
+}
+.grid-client:hover .grid-logo { background-color: #7D2B2B; border:5px solid #eee;}
+
+
+/*---------Section 4-------------
+------------Contact--------------
+-------------------------------*/
+.section-4 {background-color: #222; padding: 2% 0 2% 0; text-align: center; box-sizing: border-box; color: #fff;}
+.icon { display: inline-block; width: 1em; height: 1em; fill: currentColor;}
+.icon-paperplane { font-size: 1em; color: white; margin-left: 1px; margin-top: 5px;}
+.contact-section{ display: inline-block; vertical-align: middle;}
+.contact-button {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: .75em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 10px 30px 10px 30px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.contact-button span {text-transform: none; position: absolute; color: #EE283E; top: 12px; left: 4px; opacity: 0; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s;}
+.contact-button:hover { -webkit-transition: 0.3s ease-in-out; transition: 0.3s ease-in-out; border: 2px solid white; border-radius: 50px; background-color: white;}
+.contact-button:hover > span { opacity: 1; -webkit-transition: all 0.25s ease-in-out 0.1s; transition: all 0.25s ease-in-out 0.1s;}
+.contact-button:hover:before { -webkit-transition: 0.3s ease-in-out; transition: 0.3s ease-in-out; background-color: #EE283E;}
+.contact-button:before, .contact-button:after { content: ""; position: absolute; top: -13px; left: -13px; width: 100px; height: 16px; }
+.contact-button:before { border: 2px solid #EE283E; background-color: #1F3944; -webkit-transform: skew(-25deg); transform: skew(-25deg); -webkit-transition: 0.3s ease-in-out; transition: 0.3s ease-in-out;}
+.contact-button:after { content: "Available for work"; font-size: 0.45em; top: -7px; left: -12px; color: white;}
+
+/*-------------------------------
+-------------Footer--------------
+-------------------------------*/
+#footer {display: inline-block; vertical-align: middle;}
+#footer h4{ margin: 0 10px 0 0; color: #fff;}
+#f-p1, #f-p2 { box-sizing: border-box; height: 2em; width: 100%;}
+#f-p2{font-size: .75em;}
+#name { box-sizing: border-box; color: rgb(200, 218, 230);}
+.copyright{ margin-top: 2%; font-size: .75em;}
+
+/*-------------------------------
+-----------Atom-Effect-----------
+-------------------------------*/
+/* Credit goes to Daniele Moraschi who created this CSS Atom on Codepen.
+http://codepen.io/danielemoraschi/pen/psKHv */
+.atom-container { position: relative; margin: auto; width: 250px; padding-bottom:12em;}
+.wrap, .circle {
+  -webkit-transition: -webkit-transform 500ms linear;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: -moz-transform 500ms linear;
+  -moz-transform-style: preserve-3d;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  margin-top: 50px;
+  position: absolute;
+}
+.circle { position: absolute; border: 3px solid #aaa; border-radius: 250px; margin: auto;}
+.circle.c2,.circle.center { border: 2px solid #666; width: 140px; height: 140px; top: 55px; left: 55px;}
+.circle.center { background: #fff; width: 30px; height: 30px; top: 110px; left: 110px; box-shadow: 0 0 5px #fff;}
+.wrap-electron {
+  border: 0px solid  #fff;
+  position: absolute;
+  width: 100%;
+  -webkit-animation: electron 10s linear infinite;
+  -moz-animation: electron 10s linear infinite;
+}
+.electron {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  margin-left: -25px;
+  border: none;
+  top: -15px;
+  -webkit-transform-origin: 50% 50%;
+  font-size: 1rem;
+  color: #FFF;
+  text-align:center;
+  text-align: center;
+  padding: 1em;}
+.c2 .wrap-electron { -webkit-animation: electron 9s linear infinite; -moz-animation: electron 9s linear infinite;}
+.c2 .electron { top: -6px;}
+.wrap { border: 0px solid #aaa; -webkit-animation: lateral 15s ease-in-out infinite; -moz-animation: lateral 15s ease-in-out infinite;}
+.wrap.r { -webkit-animation: lateralRevert 8s linear infinite; -moz-animation: lateralRevert 8s linear infinite;}
+.vertical { -webkit-animation: vertical 9s linear infinite; -moz-animation: vertical 9s linear infinite;}
+.horizontal { -webkit-animation: horizontalRevert 7s linear infinite; -moz-animation: horizontalRevert 7s linear infinite;}
+.vertical.c2 { -webkit-animation: vertical 5s linear infinite; -moz-animation: vertical 5s linear infinite;}
+.horizontal.c2 { -webkit-animation: horizontalRevert 4s linear infinite; -moz-animation: horizontalRevert 4s linear infinite;}
+@-webkit-keyframes electron {
+  from { -webkit-transform: rotateZ(0deg);}
+  to { -webkit-transform: rotateZ(360deg);}}
+@-webkit-keyframes horizontal {
+  from { -webkit-transform: rotateY(0deg);}
+  to { -webkit-transform: rotateY(360deg);}}
+@-webkit-keyframes horizontalRevert {
+  from { -webkit-transform: rotateY(360deg);}
+  to { -webkit-transform: rotateY(0deg);}}
+@-webkit-keyframes vertical {
+  from {  -webkit-transform: rotateX(0deg);}
+  to {-webkit-transform: rotateX(360deg);}}
+@-webkit-keyframes verticalRevert {
+  from {-webkit-transform: rotateX(360deg);}
+  to {-webkit-transform: rotateX(0deg);}}
+@-webkit-keyframes lateral {
+  from { -webkit-transform: rotateZ(0deg);}
+  to { -webkit-transform: rotateZ(360deg);}}
+@-webkit-keyframes lateralRevert {
+  from { -webkit-transform: rotateZ(360deg);}
+  to { -webkit-transform: rotateZ(0deg);}}
+@-moz-keyframes electron {
+  from { -moz-transform: rotateZ(0deg);}
+  to { -moz-transform: rotateZ(360deg);}}
+@-moz-keyframes horizontal {
+  from { -moz-transform: rotateY(0deg);}
+  to { -moz-transform: rotateY(360deg);}}
+@-moz-keyframes horizontalRevert {
+  from { -moz-transform: rotateY(360deg);}
+  to { -moz-transform: rotateY(0deg);}}
+@-moz-keyframes vertical {
+  from { -moz-transform: rotateX(0deg);}
+  to { -moz-transform: rotateX(360deg);}}
+@-moz-keyframes verticalRevert {
+  from { -moz-transform: rotateX(360deg);}
+  to { -moz-transform: rotateX(0deg);}}
+@-moz-keyframes lateral {
+  from { -moz-transform: rotateZ(0deg);}
+  to { -moz-transform: rotateZ(360deg);}}
+@-moz-keyframes lateralRevert {
+  from { -moz-transform: rotateZ(360deg);}
+  to { -moz-transform: rotateZ(0deg);}}
+
+
+  /*-------------------------------
+  ------------Navigation-----------
+  -------------------------------*/
+
+  .cd-container {width: 90%; max-width: 1170px; margin: 0 auto;}
+  .cd-container::after {content: ''; display: table; clear: both;}
+  .nav-line{ line-height: 25px; margin-left: 10px;}
+  #cd-main-nav{ text-align: center;}
+    #cd-nav li a{ line-height: 90px;}
+  #cd-nav ul {
+    position: fixed;
+    width: 60px;
+    max-width: 60px;
+    bottom: 45px;
+    top: auto;
+    right: 2%;
+    border-radius: 30em;
+    box-shadow: 0 0 10px rgba(232, 74, 100, 0.4);
+    background: white;
+    visibility: hidden;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 50% bottom;
+    -moz-transform-origin: 50% bottom;
+    -ms-transform-origin: 50% bottom;
+    -o-transform-origin: 50% bottom;
+    transform-origin: 50% bottom;
+    -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s;
+    -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s;
+    transition: transform 0.3s, visibility 0s 0.3s;
+  }
+
+
+  #cd-nav ul li.filler{height:55px; border: none;}
+  #cd-nav li { display: inline-block; vertical-align: middle;}
+  #cd-nav li a:link { opacity: 1; padding: 0; border-bottom: none; width: 120px; text-align: center; margin: 0 auto; color: #222;}
+  #cd-nav li a:hover { color: #00bd9b; background-color: #222;}
+/* when user scrolls, the navigation moves to the bottom right in Fixed position - as on touch devices */
+  #cd-nav.is-fixed ul {
+    position: fixed;
+    width: 60px;
+    max-width: 60px;
+    bottom: 45px;
+    top: auto;
+    right: 2%;
+    border-radius: 30em;
+    background: white;
+    visibility: hidden;
+    box-shadow: 0 0 10px rgba(232, 74, 100, 0.4);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  #cd-nav.is-fixed ul li { display: block;}
+  #cd-nav.is-fixed ul li a { margin: 0 -40px; border-bottom: 1px solid #eff2f6; font-size: 12px; padding: 0px;}
+  #cd-nav ul.has-transitions {
+    /* this class is used to bring back transitions when the navigation moves at the bottom right */
+    -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s;
+    -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s;
+    transition: transform 0.3s, visibility 0s 0.3s;
+  }
+
+
+
+#cd-nav ul li.filler{height:55px; border: none;}
+  #cd-nav ul li {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  #cd-nav.is-fixed ul li .H-logo {
+    display:none;
+  }
+  #cd-nav ul.is-visible {
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0.3s, visibility 0s 0s;
+    -moz-transition: -moz-transform 0.3s, visibility 0s 0s;
+    transition: transform 0.3s, visibility 0s 0s;
+  }
+  #cd-nav ul.is-visible li:nth-child(1) {
+    -webkit-animation: cd-slide-in 0.2s;
+    -moz-animation: cd-slide-in 0.2s;
+    animation: cd-slide-in 0.2s;
+  }
+  #cd-nav ul.is-visible li:nth-child(2) {
+    -webkit-animation: cd-slide-in 0.3s;
+    -moz-animation: cd-slide-in 0.3s;
+    animation: cd-slide-in 0.3s;
+  }
+  #cd-nav ul.is-visible li:nth-child(3) {
+    -webkit-animation: cd-slide-in 0.4s;
+    -moz-animation: cd-slide-in 0.4s;
+    animation: cd-slide-in 0.4s;
+  }
+  #cd-nav ul.is-visible li:nth-child(4) {
+    -webkit-animation: cd-slide-in 0.5s;
+    -moz-animation: cd-slide-in 0.5s;
+    animation: cd-slide-in 0.5s;
+  }
+  #cd-nav ul.is-visible li:nth-child(5) {
+    -webkit-animation: cd-slide-in 0.6s;
+    -moz-animation: cd-slide-in 0.6s;
+    animation: cd-slide-in 0.6s;
+  }
+  #cd-nav li a {
+    display: block;
+    padding: 1em;
+    border-bottom: 1px solid #eff2f6;
+    line-height: 60px;
+  }
+  #cd-nav li:last-child a {
+    border-bottom: none;
+  }
+
+  .cd-nav-trigger {
+    position: fixed;
+    bottom: 40px;
+    right: 2%;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 30em;
+    box-shadow: 0 0 10px rgba(232, 74, 100, 0.4);
+    /* image replacement */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .cd-nav-trigger span {
+    /* used to create the menu icon */
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #e84a64;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+  }
+  .cd-nav-trigger span::before, .cd-nav-trigger span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    background: inherit;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.3s, background 0s;
+    -moz-transition: -moz-transform 0.3s, background 0s;
+    transition: transform 0.3s, background 0s;
+  }
+  .cd-nav-trigger span::before {
+    top: -6px;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  .cd-nav-trigger span::after {
+    bottom: -6px;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  .cd-nav-trigger.menu-is-open {
+    box-shadow: none;
+  }
+  .cd-nav-trigger.menu-is-open span {
+    background: rgba(232, 74, 100, 0);
+  }
+  .cd-nav-trigger.menu-is-open span::before, .cd-nav-trigger.menu-is-open span::after {
+    background: #e84a64;
+  }
+  .cd-nav-trigger.menu-is-open span::before {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  .cd-nav-trigger.menu-is-open span::after {
+    bottom: 0;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+  }
+
+
+  /*-------------------------------
+  ------------Keyframes------------
+  -------------------------------*/
+  @-webkit-keyframes cd-slide-in {
+    0% {
+      -webkit-transform: translateX(-50%);}
+    100% {
+      -webkit-transform: translateY(0);}
+  }
+  @-moz-keyframes cd-slide-in {
+    0% {
+      -moz-transform: translateX(100px);}
+    100% {
+      -moz-transform: translateY(0);}
+  }
+  @keyframes cd-slide-in {
+    0% {
+      -webkit-transform: translateX(100px);
+      -moz-transform: translateX(100px);
+      -ms-transform: translateX(100px);
+      -o-transform: translateX(100px);
+      transform: translateX(100px);}
+    100% {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);}
+  }
+  @-webkit-keyframes cd-bounce-in {
+    0% {
+      -webkit-transform: scale(0);}
+    60% {
+      -webkit-transform: scale(1.2);}
+    100% {
+      -webkit-transform: scale(1);}
+  }
+  @-moz-keyframes cd-bounce-in {
+    0% {
+      -moz-transform: scale(0);}
+    60% {
+      -moz-transform: scale(1.2);}
+    100% {
+      -moz-transform: scale(1);}
+  }
+  @keyframes cd-bounce-in {
+    0% {
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
+      transform: scale(0);}
+    60% {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);}
+    100% {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);}
+  }
+
+
+/*-------------------------------
+---------Media-Queries-----------
+-------------------------------*/
+@media only screen and (min-width: 1170px) {
+
+  /*-------------------------------
+  ------------Custom---------------
+  -------------------------------*/
+.name{ font-size: 3rem;}
+#H-logo{ margin: 2px 60px 0px 45px; height: 4.25em;}
+.titles{ font-size: 2rem; padding-top: 2em;}
+
+
+  /*---------Section 1-------------
+  --------------Home---------------
+  -------------------------------*/
+.section-1 {padding: 15% 0 50% 0;}
+
+
+/*-------------------------------
+-----------Atom-Effect-----------
+-------------------------------*/
+.atom-container{padding-bottom:0;}
+
+
+  /*---------Section 2-------------
+  -------------About---------------
+  -------------------------------*/
+.section-2 h2{ font-size:30px;}
+.section-2 h3{ font-size:20px;}
+
+
+  /*---------Section 3-------------
+  ------------Projects-------------
+  -------------------------------*/
+.grid-client{ width: 25%;}
+.about-me{ padding: 24px 0px 24px; width: 53%;}
+
+
+  /*---------Section 4-------------
+  ------------Contact--------------
+  -------------------------------*/
+  .copyright{ padding-right: 4%; font-size: 1.75em;}
+  .contact-button{padding: 20px 60px 20px 55px; font-size: 1.2em;}
+  .contact-button span { top: 22px; left: 15px;}
+  .contact-button:before, .contact-button:after {top: -14px; width: 132px; height: 25px;}
+  .contact-button:after {top: -5px; left: -13px;}
+  #footer{padding-top: 1em;}
+
+
+  /*-------------------------------
+  -----------Navigation------------
+  -------------------------------*/
+  .nav-line{margin-left: 0px;}
+  .name{ font-size: 3rem;}
+  .cd-nav-trigger {right: 2%;width: 60px;height: 60px;}
+  nav, nav ul, nav ul li{ line-height: 0;}
+  #cd-main-nav{ text-align: center;}
+  #cd-nav li a{ line-height: 90px;}
+  #cd-nav ul {
+    /* the navigation moves to the top */
+    position: absolute;
+    width: 100%;
+    max-width: none;
+    bottom: auto;
+    right: 0;
+    background: transparent;
+    visibility: visible;
+    box-shadow: none;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    transition: all 0s;
+    background: #fff;
+    border-radius: 0px;
+  }
+  #cd-nav ul li.filler{height:55px; border: none;}
+  #cd-nav li { display: inline-block; vertical-align: middle;}
+  #cd-nav li a:link { opacity: 1; padding: 0; border-bottom: none; width: 120px; text-align: center; margin: 0 auto; color: #222;}
+  #cd-nav li a:hover { color: #00bd9b; background-color: #222;}
+/* when user scrolls, the navigation moves to the bottom right in Fixed position - as on touch devices */
+  #cd-nav.is-fixed ul {
+    position: fixed;
+    width: 60px;
+    max-width: 60px;
+    bottom: 45px;
+    top: auto;
+    right: 2%;
+    border-radius: 30em;
+    background: white;
+    visibility: hidden;
+    box-shadow: 0 0 10px rgba(232, 74, 100, 0.4);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  #cd-nav.is-fixed ul li { display: block;}
+  #cd-nav.is-fixed ul li a { margin-left: -30px; border-bottom: 1px solid #eff2f6; font-size: 12px; padding: 0px;}
+  #cd-nav ul.has-transitions {
+    /* this class is used to bring back transitions when the navigation moves at the bottom right */
+    -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s;
+    -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s;
+    transition: transform 0.3s, visibility 0s 0.3s;
+  }
+  #cd-nav ul.is-visible {
+    /* this class is used to bring back the navigation animation - as on touch devices */
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0.3s, visibility 0s 0s;
+    -moz-transition: -moz-transform 0.3s, visibility 0s 0s;
+    transition: transform 0.3s, visibility 0s 0s;
+  }
+  #cd-nav ul.is-hidden {
+    /* this class is used to animate the scale down the navigation when the user scrolls down with the navigation still open */
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .cd-nav-trigger {
+    /* the the menu triger is hidden by default on desktop devices */
+    visibility: hidden;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s;
+    -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s;
+    transition: transform 0.3s, visibility 0s 0.3s;
+  }
+  .is-fixed .cd-nav-trigger {
+    visibility: visible;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    transition: all 0s;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation: cd-bounce-in 0.3s linear;
+    -moz-animation: cd-bounce-in 0.3s linear;
+    animation: cd-bounce-in 0.3s linear;
+  }
+}
