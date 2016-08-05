@@ -1,0 +1,42 @@
+#map {
+  height: 400px;
+  width: 550px;
+}
+.controls {
+margin-top: 10px;
+border: 1px solid #44FF11;
+border-radius: 0;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+height: 32px;
+outline: none;
+background: rgba(68,255,17,.3);
+-webkit-text-stroke: 0.3px #bce0b8;
+-webkit-text-fill-color: #44FF11;
+
+}
+
+#pac-input {
+background-color: rgb(0,0,0,0);
+font-size: 15px;
+font-weight: 300;
+margin-left: 12px;
+padding: 0 11px 0 13px;
+text-overflow: ellipsis;
+width: 300px;
+}
+
+#pac-input:focus {
+border-color: rgb(83,162,91,0.5);
+}
+
+#type-selector {
+color: #fff;
+background-color: #4d90fe;
+padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+font-size: 13px;
+font-weight: 300;
+}
