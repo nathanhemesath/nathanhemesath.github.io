@@ -79,7 +79,8 @@ a { text-decoration: none; color: #222;}
   -moz-transition: all 0.1s;
   transition: all 0.1s;
   border:1px solid #f0f0f0;
-  cursor:pointer;}
+  cursor:pointer;
+min-height: 213px;}
 
 .grid-client:hover {
   -ms-transform: scale(1.1,1.1); /* IE 9 */
