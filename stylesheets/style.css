@@ -580,6 +580,7 @@ http://codepen.io/danielemoraschi/pen/psKHv */
   #cd-nav li a{ line-height: 90px;}
   #cd-nav ul {
     /* the navigation moves to the top */
+    margin: 0;
     position: absolute;
     width: 100%;
     max-width: none;
