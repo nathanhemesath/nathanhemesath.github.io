@@ -238,7 +238,7 @@ http://codepen.io/danielemoraschi/pen/psKHv */
 
   .cd-container {width: 90%; max-width: 1170px; margin: 0 auto;}
   .cd-container::after {content: ''; display: table; clear: both;}
-  .nav-line{ line-height: 25px; margin-left: 10px;}
+  .nav-line{ line-height: 25px;}
   #cd-main-nav{ text-align: center;}
     #cd-nav li a{ line-height: 90px;}
   #cd-nav ul {
