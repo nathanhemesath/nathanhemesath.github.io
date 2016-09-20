@@ -274,7 +274,7 @@ http://codepen.io/danielemoraschi/pen/psKHv */
 
   #cd-nav ul li.filler{height:55px; border: none;}
   #cd-nav li { display: inline-block; vertical-align: middle;}
-  #cd-nav li a:link { opacity: 1; padding: 0; border-bottom: none; width: 120px; text-align: center; margin: 0 auto; color: #222;}
+  #cd-nav li a:link { opacity: 1; padding: 0; border-bottom: none; width: 62px; text-align: center; margin: 0 auto; color: #222;}
   #cd-nav li a:hover { color: #00bd9b; background-color: #222;}
 /* when user scrolls, the navigation moves to the bottom right in Fixed position - as on touch devices */
   #cd-nav.is-fixed ul {
