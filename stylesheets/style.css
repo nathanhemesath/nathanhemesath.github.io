@@ -242,6 +242,7 @@ http://codepen.io/danielemoraschi/pen/psKHv */
   #cd-main-nav{ text-align: center;}
     #cd-nav li a{ line-height: 90px;}
   #cd-nav ul {
+    margin: 0 40px;
     position: fixed;
     width: 60px;
     max-width: 60px;
@@ -360,6 +361,7 @@ http://codepen.io/danielemoraschi/pen/psKHv */
   }
 
   .cd-nav-trigger {
+    margin: 0 40px;
     position: fixed;
     bottom: 40px;
     right: 2%;
