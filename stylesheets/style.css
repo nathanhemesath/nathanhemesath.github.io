@@ -238,10 +238,11 @@ http://codepen.io/danielemoraschi/pen/psKHv */
 
   .cd-container {width: 90%; max-width: 1170px; margin: 0 auto;}
   .cd-container::after {content: ''; display: table; clear: both;}
-  .nav-line{ line-height: 25px; margin-left: 10px;}
+  .nav-line{ line-height: 25px;}
   #cd-main-nav{ text-align: center;}
     #cd-nav li a{ line-height: 90px;}
   #cd-nav ul {
+    margin: 0 40px;
     position: fixed;
     width: 60px;
     max-width: 60px;
@@ -274,7 +275,7 @@ http://codepen.io/danielemoraschi/pen/psKHv */
 
   #cd-nav ul li.filler{height:55px; border: none;}
   #cd-nav li { display: inline-block; vertical-align: middle;}
-  #cd-nav li a:link { opacity: 1; padding: 0; border-bottom: none; width: 120px; text-align: center; margin: 0 auto; color: #222;}
+  #cd-nav li a:link { opacity: 1; padding: 0; border-bottom: none; width: 62px; text-align: center; margin: 0 auto; color: #222;}
   #cd-nav li a:hover { color: #00bd9b; background-color: #222;}
 /* when user scrolls, the navigation moves to the bottom right in Fixed position - as on touch devices */
   #cd-nav.is-fixed ul {
@@ -295,7 +296,7 @@ http://codepen.io/danielemoraschi/pen/psKHv */
     transform: scale(0);
   }
   #cd-nav.is-fixed ul li { display: block;}
-  #cd-nav.is-fixed ul li a { margin: 0 -40px; border-bottom: 1px solid #eff2f6; font-size: 12px; padding: 0px;}
+  #cd-nav.is-fixed ul li a { margin: 0 auto; border-bottom: 1px solid #eff2f6; font-size: 12px; padding: 0px;}
   #cd-nav ul.has-transitions {
     /* this class is used to bring back transitions when the navigation moves at the bottom right */
     -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s;
@@ -360,6 +361,7 @@ http://codepen.io/danielemoraschi/pen/psKHv */
   }
 
   .cd-nav-trigger {
+    margin: 0 40px;
     position: fixed;
     bottom: 40px;
     right: 2%;
