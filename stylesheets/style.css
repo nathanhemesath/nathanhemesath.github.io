@@ -1,6 +1,6 @@
 @import 'global.css';
 /*---Custom--*/
-body { font-size: 100%; font-family: "Source Sans Pro", sans-serif; background: rgba(34,34,34,.52) url("../images/bg-main.png") center top no-repeat fixed; background-size: 100% 100%;}
+body { font-size: 100%; font-family: "Source Sans Pro", sans-serif; background: rgba(34,34,34,.52) url("../images/bg-main.png") center top no-repeat fixed; background-size: 100% 92%;}
 a { text-decoration: none; color: #222;}
 .nobullets{list-style:none;margin:0;padding:0}
 .name{ font-size: 2rem; color: #fff; position: relative; z-index: 2;}
