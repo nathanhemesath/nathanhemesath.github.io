@@ -1,0 +1,294 @@
+/* --------------------------------------------
+	
+	Index
+	---
+	1. Variables
+	2. Imports
+    3. Structure
+	4. Header
+    5. Navigation
+	6. Content
+        6a. Homepage
+        6b. Assets
+	7. Footer
+	10. Media Queries
+-------------------------------------------- */
+
+/* 2. Variables ------------------- */
+
+/* 2. Imports ------------------- */
+
+/* 3. Structure ------------------- */
+body { 
+    @include font-size($base-font-size);
+    color: $font-color;
+}
+
+/* 4. Header ------------------- */
+
+/* 5. Navigation ------------------- */
+.menu {
+    .logo { 
+        margin-top: 11px;
+        @include large {
+            margin-top: 22px;
+        }
+        img {
+            max-height:50px;
+        }
+    }
+    ul {
+        margin-left: 10px;
+        @include mobileonly {
+            display: none;
+        }
+    }
+    li {
+        @include font-size(18px);
+        display: inline-block;
+        position: relative;
+        ul {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 200px;
+            background-color: #F4F4F4;
+            display: none;
+            margin: 0;
+            &:before {
+                content:'';
+                border: 10px solid transparent;
+                border-bottom-color: #F4F4F4;
+                position: absolute;
+                left: 35px;
+                top: -20px;
+            }
+            li {
+                @include font-size(15px);
+                display: block;
+                border-bottom: 1px solid darken(#F4F4F4,5%);
+            }
+            a {
+                line-height: normal;
+                padding: 12px 15px;
+                line-height: normal;
+                
+                &:hover, &:focus {
+                    background: none;
+                }
+            }
+            ul {
+                left: 100%;
+                top:0;
+                background-color: #EAEAEA;
+                width: 220px;
+                
+                &:before {
+                    display: none;
+                }
+            }
+        }
+         &:hover > ul, &:focus > ul, &:active > ul {
+            display: block;
+        }
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            display: block;
+            line-height: 88px;
+            padding: 3px 15px 7px;
+            @include large {
+                padding: 3px 35px 7px;
+            } 
+            &:hover, &:focus, &:active {
+                color: $third-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+/*------------- 6a. Homepage ---------------*/
+.m-section-grid{
+    .g-content{ 
+        width: 100%;
+        margin: 0 auto; 
+        position: relative;
+        margin-top: -4em;
+        @include medium{
+            max-width:1400px;
+        }
+        .g-content--container{
+            padding: 2em;
+            margin: 5em 0;
+            text-align:center;
+            @include large {
+                padding: 3em;
+            }
+        }
+        .g-cell{
+            text-align:center;
+            transition: all 0.1s;
+            position:relative;
+            > a {
+                left: 0;
+                top:0;
+                width:100%;
+                display:block;
+            }
+            h2 {
+                margin: 0 0 15px;
+                letter-spacing: 1px;
+                span {
+                    @include font-size(18px);
+                    display: block;
+                    color: #898b8e;
+                    letter-spacing: 0;
+                    margin-bottom: 5px;
+                }
+            }
+            .learn-more {
+                display:block;
+                @include font-size(21px);
+                color: $third-color;
+                text-transform: lowercase;
+            }
+            img{
+                display: block;
+                margin: 0 auto;
+                max-height: 334px;
+            }
+            &:hover {
+              transform: scale(1.2,1.2);
+              box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.7);
+              z-index: 5;
+              background-color: $white;
+            }
+        }
+    }
+}
+.m-section-imagery{
+    >div{             
+        height:400px;
+        &:first-child{
+             background: url('/images/feature-1.jpg') center no-repeat;
+        }
+        &:last-child{
+            background: url('/images/feature-2.jpg') center no-repeat;
+        }
+    }
+    .m-row--first, .m-row--second{ 
+        padding: 25px 45px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .m-row--first{
+        background-color: rgba(242, 139, 0, 0.6);
+    }
+    .m-row--second{
+        background-color: rgba(0, 57, 118, 0.6);
+    }
+    h3 { 
+        color: $white;
+        margin: 0 0 5px;
+        letter-spacing: 1px;
+    }
+    .m-section-content {
+        @include font-size(17px);
+        color: $white;
+        margin: 0 0 10px;
+    }
+    .learn-more-link {
+        @include font-size(17px);
+        display: inline-block;
+        color: $white;
+        text-transform: lowercase;
+        text-decoration: none;
+        &:after {
+            content: '\003E';
+            margin-left: 5px;
+        }
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+/* 6b. Subpages */
+.maincontent {
+    > .u-container {
+        padding: 4em 2em;
+        background-color: white;
+        box-shadow: 0 0 15px rgba(0,0,0,.1);
+        @include large {
+            padding: 4em;
+        }
+    }
+}
+/* 6c. Assets (Page titles, breadcrumbs, pagebuilder assets, etc) */
+.page-title{ 
+    background:url("/images/father-son-bg.jpg") center top no-repeat; 
+    background-size: cover !important;
+    height: 200px; 
+    position: relative; 
+    height: auto;
+    &:before { 
+        content: ""; 
+        position:absolute; 
+        top: 0; 
+        left: 0; 
+        bottom: 0; 
+        right: 0; 
+        background: rgba(25,56,138,.3); 
+    }
+    .u-container { 
+        position: relative; 
+        z-index: 2; 
+        height: 200px;
+        .page-title-content{
+            position:absolute; 
+            bottom:0; 
+            left: 0; 
+            background: rgba(200, 200, 200, 0.8); 
+            width:100%; 
+            padding:1.5em 3em;
+            h1{
+                margin: 0;
+                line-height: 1em; 
+                color: $white; 
+                font-size: 55px;    
+            }
+        }
+    }
+}
+
+/* 7. Footer ------------------- */
+.footer { 
+    padding: 3em 0;
+    background: $black2;
+    text-align: center;  
+    img {
+        vertical-align: middle;
+        margin: 0 .5em;
+    }  
+    p {
+        @include font-size(12px);
+        margin:0;
+        text-align: center;
+        color: $fourth-color;
+    }  
+    ul{
+        list-style-type:none;
+    }
+    li{
+        display:inline-block; 
+        margin: 0 1em;
+    }
+    a, a:visited  {  
+        color: white;
+        text-decoration: none;     
+        &:hover, &:focus, &:active {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}

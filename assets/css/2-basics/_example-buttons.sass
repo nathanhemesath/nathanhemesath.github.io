@@ -1,0 +1,136 @@
+@import '2-basics/mixins'
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+  display: inline-block
+  height: 38px
+  padding: 0 30px
+  color: #555
+  text-align: center
+  font-size: 11px
+  font-weight: 600
+  line-height: 38px
+  letter-spacing: 0.1rem
+  text-transform: uppercase
+  text-decoration: none
+  white-space: nowrap
+  background-color: transparent
+  border-radius: 4px
+  border: 1px solid #bbb
+  cursor: pointer
+  box-sizing: border-box
+
+  &:hover,
+  &:active,
+  &:focus
+    color: #333
+    border-color: #888
+    outline: 0
+
+
+
+/* 1. Buttons -------------------- */
+.c-button
+    display: inline-block
+    cursor: pointer
+    text-align: center
+    text-decoration: none
+    padding: 0.5em 2.5em 0.75em
+    line-height: 1
+    border: 0
+    border-radius: 50em
+    text-transform: lowercase
+    
+    &.c-button--primary
+        @extend .button
+        background: $third-color
+        color: white
+        border: 1px solid #1773d5
+        
+        &:hover, 
+        &:focus
+            background: darken($third-color,5%)
+            color: white
+        
+    &.c-button--secondary
+        @extend .button
+        background: $secondary-color
+        color: white
+        
+        &:hover,
+        &:focus
+            background: lighten($primary-color,15%)
+            color: white
+        
+        
+/* 2. Notification Messages -------------------- */
+.c-message
+    padding: 1em 1.5em
+    line-height: normal
+    color: white
+    
+    p
+        color: white
+        margin: 0
+        line-height: inherit
+        
+.c-message--success
+    @extend .message
+    background-color: #2ed784
+    
+.c-message--error
+    @extend .message
+    background-color: #e34e5f
+    
+.c-message--warning
+    @extend .message
+    background-color: #efa608
+    
+.c-message--help
+    @extend .message
+    background-color: #24ccff
+    
+    
+/* 3. Modals -------------------- */
+.c-overlay
+    display: none
+    position: fixed
+    left: 2%
+    top: 50%
+    max-height: 96%
+    overflow: auto
+    background-color: #FFF
+    padding: 1.5em
+    z-index: 10
+    transform: translateY(-50%)
+    
+    @include medium
+        left: 50%
+        margin-left: -250px
+        width: 500px
+        
+    .c-overlay--close 
+        position: absolute
+        display: block
+        right: 15px
+        top: 15px
+        width: 24px
+        height: 24px
+        background: url("/img/icon-close") no-repeat
+        cursor: pointer
+        text-indent: -9999em
+        
+.c-overlayMask
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgb(75,75,75)
+    background: rgba(75,75,75,.75)
+    z-index: 9
+    

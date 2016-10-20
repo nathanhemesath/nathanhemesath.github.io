@@ -1,0 +1,101 @@
+$base-font-size: 16px
+$font-stack: skolar-sans-latin,sans-serif
+$heading-stack: skolar-sans-latin,sans-serif
+
+
+/* 8. Typography ------------------- */
+body, p, ul, ol, dl, input, textarea, select, button
+    font-family: $font-stack
+    line-height: 1.65
+    
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6
+    color: $black2
+    font-weight: bold
+    font-family: $heading-stack
+    line-height: 1
+    margin: 0.5em 0
+    
+//.gigantic
+//    font-size: 110px
+//    line-height: 1.09
+//    letter-spacing: -2px
+//
+//.huge, h1
+//    font-size: 68px
+//    line-height: 1.05
+//    letter-spacing: -1px
+//
+//.large, h2
+//    font-size: 42px
+//    line-height: 1.14
+//
+//.bigger, h3
+//    font-size: 26px
+//    line-height: 1.38
+//
+//.big, h4
+//    font-size: 22px
+//    line-height: 1.38
+//
+//.small, small
+//    font-size: 10px
+//    line-height: 1.2
+
+
+// Basic Text Style
+
+p
+    margin: 0 0 20px 0
+
+em
+    font-style: italic
+
+strong
+    font-weight: bold
+
+hr
+    border: solid $silver
+    border-width: 1px 0 0
+    clear: both
+    margin: 10px 0 30px
+    height: 0
+    
+h1
+    &include font-size(50px)
+    font-weight: bold
+    color: $primary-color
+    margin: 0 0 0.5em
+    
+h2
+    &include font-size(30px)
+    color: $primary-color
+    
+h3 
+    &include font-size(28px)
+    color: $third-color
+    
+h4
+    &include font-size(18px)
+    color: $primary-color
+    
+h5
+    &include font-size(19px)
+    color: $secondary-color
+    
+h6
+    &include font-size(16px)
+    color: $font-color
+    
+p, li, table
+    &include font-size($base-font-size)
+        
+p
+    margin: 0 0 1em
+    
+blockquote, ul, ol, dl
+    margin: 1.5rem
+    
+ul, ol, dl
+    list-style-position:outside
+    

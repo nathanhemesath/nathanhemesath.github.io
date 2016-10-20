@@ -1,132 +1,574 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Nate Hemesath</title>
-  <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="images/favicon.ico"> <!-- Favicon -->
-  <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css"> <!-- CSS reset -->
-  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"> <!-- CSS styles -->
-  <script src="javascripts/modernizr.js"></script> <!-- Modernizr -->
-</head>
-
-<body id="1">
-
-  <header id="cd-nav">
-		    <a class="cd-nav-trigger" href="javascript:void(0)">Menu<span></span></a>
-    <nav id="cd-main-nav">
-      <ul>
-          <li class="nav-line"><a href="#1">Home</a></li><li class="nav-line"><a href="#2">About</a></li><li><img src="images/logo.png" class="H-logo" alt="Hemesath Logo"></li><li class="nav-line"><a href="#3">Projects</a></li><li class="nav-line"><a href="#4">Contact</a></li><li class="filler"></li>
-      </ul>
-    </nav>
-  </header>
-
-
-<!-- Section 1/Home Section -->
-  <section class="section-1">
-    <span class="name">Nate Hemesath</span>
-    <div class="atom-container">
-      <div class="wrap">
-        <div class="circle horizontal c1">
-          <div class="wrap-electron"><div class="circle electron">CSS</div></div>
-        </div>
-        <div class="circle vertical c1">
-          <div class="wrap-electron"><div class="circle electron">HTML</div></div>
-        </div>
-      </div>
-      <div class="wrap r">
-        <div class="circle horizontal c2">
-          <div class="wrap-electron"><div class="circle electron">JS</div></div>
-        </div>
-        <div class="circle vertical c2">
-          <div class="wrap-electron"><div class="circle electron">PHP</div></div>
-        </div>
-        <div class="circle center"></div>
-      </div>
-    </div>
-  </section>
-
-    <!-- Section 2/About Section -->
-  <section class="section-2" id="2">
-    <div class="about-me">
-      <h2>Instead of About, Why</h2><hr>
-      <h3>Today's world is ever changing.  New designs and coding techniques are continuously being implemented.</h3>
-      <h3>You need someone who has the creative mind to do both.</h3>
-      <h3>My goal is simple: create something you will love by doing what I love.</h3>
-      <h3>With that in mind, you can never go wrong.</h3>
-    </div>
-  </section>
-
-  <!-- Section 3/Project Section -->
-  <section class="section-3" id="3">
-    <div class="grid-container">
-      <div class="titles">Recent Work</div>
-      <div class="grid-client ">
-        <a href="http://hemesathwd.com/fall/"><img src="images/fallout.png" alt=""></a><div class="des-title"><h2>Fallout Pip-boy</h2><h3>Recreation of the Fallout 4 pip-boy app</h3></div></div>
-      <div class="grid-client">
-        <a href="http://webstudentwork.com/nhemesath/WS/pixeldebug/">
-          <img src="images/starwars.png" alt=""></a><div class="des-title"><h2>Pixel Wars</h2><h3>Simple Star Wars RTS prototype</h3></div></div>
-      <div class="grid-client">
-        <a href="http://www.hemesathwd.com/Testing/test1">
-          <img src="images/test-site1.png" alt=""></a><div class="des-title"><h2>Website Mockup</h2><h3>Mockup for a framework product</h3></div></div>
-      <div class="grid-client">
-        <a href="http://www.hemesathwd.com/Testing/test2">
-          <img src="images/test-site2.png" alt=""></a><div class="des-title"><h2>Website Mockup</h2><h3>Mockup for a framework product</h3></div></div>   
-    <div class="grid-client">
-        <a href="https://www.hardincsb.com">
-          <img src="images/hardinscreen.png" alt="Screenshot of Hardin County Savings Bank" style="width: 314px; height: 184px;"></a>
-        <div class="des-title">
-            <h2>Hardin County Savings Bank</h2>
-            <h3>A bank site interfaced in the past 6 months.</h3>
-        </div>
-        </div>   
-    <div class="grid-client">
-        <a href="https://www.fsbiowa.com">
-          <img src="images/fsbiowascreen.png" alt="Screenshot of Farmers State Bank" style="width: 314px; height: 184px;"></a>
-        <div class="des-title">
-            <h2>Farmers State Bank</h2>
-            <h3>A bank site interfaced in the past 6 months.</h3>
-        </div>
-        </div> 
-     <div class="grid-client">
-        <a href="https://www.charterbanker.com/">
-          <img src="images/charterbankerpng.png" alt="Screenshot of Charter Bank" style="width: 314px; height: 184px;"></a>
-        <div class="des-title">
-            <h2>Charter Bank Savings Bank</h2>
-            <h3>A bank site interfaced in the past 6 months.</h3>
-        </div>
-        </div> 
-      <div class="grid-clearer"></div>
-    </div>
-  </section>
+    <title>Nathan Hemesath</title>
     
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/manifest.json">
+    
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="The portfolio of Nathan Hemesath, a UI Developer looking to create something spectacular every day." />
+    <meta name="keywords" content="Nathan, Hemesath, Nathan Hemesath, web interfacer, animations, websites, graphics, freelance, developer"/>
+    
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<!--    <script src="assets/js/functions.js" type="text/javascript"></script>-->
+    <script src="/assets/js/respond.min.js"></script>
+	<script src="/assets/js/modernizr.js"></script>
+    <script src="https://use.fontawesome.com/4b298fc02d.js"></script>
+</head>
+    
+<body id="top">
+		<header id="home-top" class="nav-top nav-fixed headroom headroom--pinned nav-root headroom--top">
+			<div class="u-container">
+				<div class="u-content">
+					<div class="g-cell gcol2 s-gcol4 m-gcol4 xs-gcol4">
+						<h1 id="header-logo" class="image-text">
+							<a href="/">
+								Nathan Hemesath
+								<i class="">NH</i>
+							</a>
+						</h1>
+					</div>
+					<div class="g-cell gcol10 s-gcol8 m-gcol8 xs-gcol8">
+						<nav id="top-nav">
+							<ul class="nav-list transistion">
+								<li><a class="active" href="#top">About</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#bottom">Notes</a></li>
+							</ul>
+						</nav>
+					</div> <!-- 12 -->
+				</div> <!-- / row -->
+			</div> <!--/ container -->
+		</header>
+        <div class="masthead-wrap"><!-- Island Goes Here -->
+			<div id="title">
+				<div class="u-container">
+					<div class="transistion cloud floatLeft"></div>
+					<div class="transistion cloud floatRight"></div>
+                        <div id="head-slider" class="transistion">
+                            <p class="header-desc">My name is</p>
+                            <h2 class="im-nate">
+                                <figure class="transistion">
+                                    <img src="/assets/img/Asset1.svg">
+                                </figure>
+                            </h2>
+                            <p class="header-desc">I'm a UI Developer.</p>
+                        </div>
+				</div>
+			</div>
+            <div id="earth-holder">
+					<img src="/assets/img/island.svg">
+            </div>
+		</div>
+<div class="page-home">
+    <!-- Modal -->
+<div class="modal-section">
+    <div class="modal" id="modal-1" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Cherokee State Bank</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/cherokee-screens.png" class="img-responsive" alt="Cherokee State Bank">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-2" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>The Bank Here</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/bankhaus-screens.png" class="img-responsive" alt="The Banke Here, Bank Haus">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://thebankhere.com/bank-haus/" target="_blank" class="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-3" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Bank of Blue Valley</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/bankbv-screens.png" class="img-responsive" alt="Bank of Blue Valley">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://bankbv.com/" target="_blank" class="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-4" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Bank Development Demo</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/bankdev-screens.png" class="img-responsive" alt="Forbin Bank Development Demo">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="http://bankdevelopment.forbin.com/" target="_blank" class="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-5" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>FSSB Online</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/fssbonline-screens.png" class="img-responsive" alt="Farmers State Bank Online">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://www.fssbonline.com/fly-with-us/" target="_blank" class="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-6" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Nate's Pharmacy</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/nates-screens.png" class="img-responsive" alt="Nate's Pharmacy">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://www.natespharmacy.com/" target="_blank" class="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
+<!--
+    <div class="modal" id="modal-7" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Smart Aging</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/bankhaus-screens.png" class="img-responsive" alt="Smart Aging">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>    
+-->
+    <div class="modal" id="modal-8" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Jackson Medical</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/jackson-screens.png" class="img-responsive" alt="Jackson Medical">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="http://www.jacksonmedical.biz/" target="_blank" class="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-9" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Middle Town Home Health Store</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/middletown-screens.png" class="img-responsive" alt="Middle Town Home Health Store">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="http://www.middletownhomehealthstore.com/" target="_blank" class="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-10" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Charter Banker</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/charter-screens.png" class="img-responsive" alt="Charter Banker">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://www.charterbanker.com/" target="_blank" class="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
 
-  <!-- Section 4/Contact Section -->
-  <section class="section-4" id="4">
-    <div class="contact-section">
-    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <defs><symbol id="icon-paperplane" viewBox="0 0 1024 1024"><title>paperplane</title>
-        <path class="path1" d="M1009.376 5.12c-5.312-3.424-11.36-5.12-17.376-5.12-6.176 0-12.384 1.76-17.76 5.376l-960 640c-9.888 6.56-15.328 18.112-14.048 29.952 1.216 11.808 8.896 22.016 19.936 26.368l250.368 100.192 117.728 206.016c5.632 9.888 16.096 16 27.424 16.128 0.128 0 0.224 0 0.352 0 11.232 0 21.664-5.952 27.424-15.552l66.464-110.816 310.24 124.064c3.808 1.536 7.808 2.272 11.872 2.272 5.44 0 10.816-1.376 15.68-4.128 8.448-4.736 14.24-13.056 15.872-22.624l160-960c2.080-12.576-3.488-25.184-14.176-32.128zM100.352 664.864l741.6-494.432-539.2 577.184c-2.848-1.696-5.376-3.936-8.512-5.184l-193.888-77.568zM326.048 770.112c-0.064-0.128-0.16-0.192-0.224-0.32l606.176-648.8-516.768 805.184-89.184-156.064zM806.944 947.488l-273.312-109.312c-6.496-2.56-13.248-3.424-19.936-3.808l420.864-652.416-127.616 765.536z"></path> </symbol></defs></svg>
-    <a href="mailto:hemesath2@gmail.com" class="contact-button">Contact
-    <svg class="icon icon-paperplane"><use xlink:href="#icon-paperplane"></use></svg>
-    <span>hemesath2@gmail.com</span></a>
+    <div class="modal" id="modal-11" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>FSB Iowa</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/fsb-screens.png" class="img-responsive" alt="Farmers State Bank Iowa">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://www.fsbiowa.com" target="_blank" sclass="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-12" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Hardin CSB</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/hardincsb-screens.png" class="img-responsive" alt="Hardin CSB">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://www.hardincsb.com" class="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-13" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Demo Test Site 1</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/demo1-screens.png" class="img-responsive" alt="Demo Test Site 1">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://nathanhemesath.github.io/Testing/test1/" target="_blank" class="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-14" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Demo Test Site 2</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/demo2-screens.png" class="img-responsive" alt="Demo Test Site 2">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://nathanhemesath.github.io/Testing/test2/" target="_blank" class="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-15" aria-hidden="true">
+      <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Pixel Star Wars</h2>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/pixelwars-screens.png" class="img-responsive" alt="Pixel Star Wars">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer">
+                <a href="http://webstudentwork.com/nhemesath/WS/pixeldebug/" target="_blank" class="btn">Visit Site</a>
+                <a href="#close" class="btn" aria-hidden="true">Done Viewing? X</a>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- Footer -->
-  <div id="footer">
-    <a href="/assets/files/resume.pdf" target="_blank" title="Nathan Hemesath's Resume">
-   <img src="images/logo.png" alt="Nathan Hemesath" id="H-logo" /><br> <h4>Resume</h4></a>
-  </div>
-  <div class="copyright">
-    <p id="f-p1">Made with love in Iowa</p>
-    <p id="f-p2">Copyright ©2016 <a href="http://www.hemesathwd.com" rel="home" id="name">Nathan Hemesath</a>. All rights reserved</p>
-  </div>
-</section>
-
-<!-- JS scripts  -->
-<script src="javascripts/jquery-2.1.4.js"></script> <!-- Jquery -->
-<script src="javascripts/menu.js"></script>
-<script src="javascripts/main.js"></script>
-
+<!-- End of Modal -->
+    
+<section id="work" class="g-container m-section-grid">
+    <div class="g-content">
+        <div class="g-content--container u-row cloud-blur">
+<!--Cherokee State Bank-->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-1" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Cherokee State Bank</h4>
+                            <p class="text-muted">Website Interfaced</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/cherokee-screens.png" class="img-responsive" alt="Cherokee State Bank">
+                </a>
+            </div>
+<!--Fairfax Savings Bank-->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-2" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Fairfax Savings Bank</h4>
+                            <p class="text-muted">Website Interfaced</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/bankhaus-screens.png" class="img-responsive" alt="Fairfax Savings Bank">
+                </a>
+            </div>
+<!--Blue Valley Bank-->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-3" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Blue Valley Bank</h4>
+                            <p class="text-muted">Website Interfaced</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/bankbv-screens.png" class="img-responsive" alt="Blue Valley Bank">
+                </a>
+            </div>
+<!--Forbin Bank Demo-->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-4" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Forbin Bank Demo</h4>
+                            <p class="text-muted">Site Restructured with SASS</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/bankdev-screens.png" class="img-responsive" alt="Forbin Bank Demo">
+                </a>
+            </div>
+<!-- FSSB Online -->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-5" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>FSSB Online</h4>
+                            <p class="text-muted">Animation</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/fssbonline-screens.png" class="img-responsive" alt="Hardin County Savings Bank">
+                </a>
+            </div>
+<!-- Nates Pharmacy -->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-6" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Nates Pharmacy</h4>
+                            <p class="text-muted">Website Interfaced</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/Nates-screens.png" class="img-responsive" alt="Nates Pharmacy">
+                </a>
+            </div>
+<!-- Smart Aging -->
+<!--
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-7" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Smart Aging</h4>
+                            <p class="text-muted">Website Interfaced</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/Smart-placeholder.png" class="img-responsive" alt="Smart Aging">
+                </a>
+            </div>
+-->
+<!--Jackson Medical-->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-8" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Jackson Medical</h4>
+                            <p class="text-muted">Website interface/styling</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/Jackson-screens.png" class="img-responsive" alt="Jackson Medical">
+                </a>
+            </div>
+<!--Middletown Home Health Store-->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-9" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Middletown Home Health Store</h4>
+                            <p class="text-muted">Website interface/styling</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/middletown-screens.png" class="img-responsive" alt="Middletown-Home-Health">
+                </a>
+            </div>
+<!--Charter Bank Savings Bank-->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-10" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Charter Bank Savings Bank</h4>
+                            <p class="text-muted">Website Interfaced</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/charter-screens.png" class="img-responsive" alt="Charter Banker Savings Bank">
+                </a>
+            </div>
+<!--Farmers State Bank Iowa-->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-11" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Farmers State Bank Iowa</h4>
+                            <p class="text-muted">Website Interfaced</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/fsb-screens.png" class="img-responsive" alt="FSB Bank Iowa">
+                </a>
+            </div>
+<!--Hardin County Savings Bank-->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-12" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Hardin County Savings Bank</h4>
+                            <p class="text-muted">Website Interfaced</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/Hardincsb-screens.png" class="img-responsive" alt="Hardin County Savings Bank">
+                </a>
+            </div>
+<!--Demo Site 1-->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-13" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Demo Site</h4>
+                            <p class="text-muted">Demo Website Interfaced</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/demo1-screens.png" class="img-responsive" alt="Demo Mockup Site">
+                </a>
+            </div>
+<!--Demo Site 2-->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-14" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Demo Site</h4>
+                            <p class="text-muted">Demo Website Interfaced</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/demo2-screens.png" class="img-responsive" alt="Demo Mockup Site">
+                </a>
+            </div>
+<!--Pixel Wars-->
+            <div class="g-cell gcol4 s-gcol12 m-gcol6 xs-gcol12 portfolio-item">
+                <a href="#modal-15" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="g-title portfolio-caption">
+                            <h4>Pixel Wars</h4>
+                            <p class="text-muted">Star Wars RTS Game</p>
+                        </div>
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="assets/img/pixelwars-screens.png" class="img-responsive" alt="Simple Star Wars RTS prototype">
+                </a>
+            </div>
+        </div>
+        </div>
+      <div class="g-clearfloat"></div>
+    </div>
+    </section>
+</div><!--End of page wrap-->
+<footer id="bottom">
+    <div class="u-container">
+        <div class="contact"><svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-paperplane" viewBox="0 0 1024 1024"><title>paperplane</title><path class="path1" d="M1009.376 5.12c-5.312-3.424-11.36-5.12-17.376-5.12-6.176 0-12.384 1.76-17.76 5.376l-960 640c-9.888 6.56-15.328 18.112-14.048 29.952 1.216 11.808 8.896 22.016 19.936 26.368l250.368 100.192 117.728 206.016c5.632 9.888 16.096 16 27.424 16.128 0.128 0 0.224 0 0.352 0 11.232 0 21.664-5.952 27.424-15.552l66.464-110.816 310.24 124.064c3.808 1.536 7.808 2.272 11.872 2.272 5.44 0 10.816-1.376 15.68-4.128 8.448-4.736 14.24-13.056 15.872-22.624l160-960c2.080-12.576-3.488-25.184-14.176-32.128zM100.352 664.864l741.6-494.432-539.2 577.184c-2.848-1.696-5.376-3.936-8.512-5.184l-193.888-77.568zM326.048 770.112c-0.064-0.128-0.16-0.192-0.224-0.32l606.176-648.8-516.768 805.184-89.184-156.064zM806.944 947.488l-273.312-109.312c-6.496-2.56-13.248-3.424-19.936-3.808l420.864-652.416-127.616 765.536z"></path></symbol></defs></svg>
+    <a href="mailto:hemesath2@gmail.com" class="contact-button">My Email<svg class="icon icon-paperplane"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-paperplane"></use></svg><span>hemesath2@gmail.com</span></a></div>
+        <div class="u-row">
+            <a href="/assets/files/resume.pdf" target="_blank" class="resume">Here's my resume...but seriously look at it!<span class="mega-octicon octicon-file-text"></span></a>
+            <br>
+            <a href="https://github.com">
+                <span class="mega-octicon octicon-code"></span> with <span class="mega-octicon octicon-heart"></span> by <a href="https://nathanhemesath.github.io/" id="name">Nathan Hemesath</a></a>
+        </div>
+    </div>
+</footer>
+    
+<!--<script src="//npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>-->
+<!--<script src="assets/js/isotope.pkgd.js"></script>-->
 </body>
 </html>

@@ -1,0 +1,218 @@
+section#top
+    padding-top: 0
+    overflow: hidden
+    background: $light-gray
+    
+header 
+    background: $light-gray
+    padding: 0
+    .nav-list 
+        position: relative
+        float: right
+        margin: .25em 0 0
+        li
+            display: block
+            float: left
+            padding: 1em
+            a
+                display: inline-block
+                text-decoration: none
+                color: $teal3
+                font-weight: 400
+                margin: 0
+                font-size: 120%
+            &:first-child a
+                margin-left: 0
+            a.active
+                color: $teal3
+            a:hover
+                color: $teal4
+#header-logo
+    -webkit-animation: fadeIn .3s ease-in-out
+    -moz-transition: fadeIn .3s ease-in-out
+    -o-transition: fadeIn .3s ease-in-out
+    transition: fadeIn .3s ease-in-out
+    overflow: hidden
+    width: 60px
+    height: 60px
+    position: relative
+    margin: 0
+    padding: 0
+    background: url('/assets/img/logo.png')center no-repeat
+    background-size: 75%
+    
+#head-slider p.header-desc
+    text-align: center
+    color: $black
+    padding: 1.75em 0
+    font-size: 180%
+    font-weight: 400
+    font-family: 'Fira Mono', monospace
+
+header.headroom--unpinned
+    @media (min-width: 992px)
+        top: -200px
+
+header.nav-root 
+    background: inherit
+    @media (min-width: 992px)
+        background: $aqua1
+        -webkit-box-shadow: none
+        box-shadow: none
+        -webkit-transition: all 0.8s
+        transition: all 0.8s
+header.nav-fixed 
+    opacity: 1
+    @media (min-width: 992px)
+        opacity: 0.97
+        -webkit-transition: all 0.8s
+        transition: all 0.8s
+        -webkit-backface-visibility: hidden
+        -webkit-perspective: 1000
+        overflow: hidden
+        -webkit-transition-timing-function: ease-in-out
+        -webkit-transform: translate3d(0,0,0)
+        
+header.nav-top 
+    opacity: 1
+    position: fixed
+    width: 100%
+    z-index: 1000
+    -webkit-transform: translate3d(0,0,0)
+        
+.transistion 
+    -webkit-transition: all .5s ease-in-out
+    transition: all .5s ease-in-out
+    
+.image-text
+    background-position: 0 0
+    background-repeat: no-repeat
+    display: block
+    overflow-x: hidden
+    overflow-y: hidden
+    text-indent: -9999px
+    a 
+        display: block
+        height: 100%
+        width: 100%
+        color: $light-gray
+        text-decoration: none
+    
+.container
+    -webkit-transition: all .5s ease-in-out
+    transition: all .5s ease-in-out
+    @media (min-width: 768px)
+        max-width: 750px
+        margin-right: auto
+        margin-left: auto
+        padding-left: 15px
+        padding-right: 15px
+        
+    
+.page-home
+    text-align: center
+        
+section
+    padding: 40px
+    &>div
+        margin: 2em 0
+
+    h1
+        font-weight: 700
+        line-height: 1
+        margin: 1em 0
+        letter-spacing: 1px
+        
+pre
+    text-align: left
+    font-family: 'Fira Mono', monospace
+    font-size: 30px
+    color: darken($silver, 5%)
+    position: absolute
+    top: -20px
+    left: -120px
+    z-index: -1
+    pointer-events: none
+    
+@media (max-width: 500px)
+  font-size: 20px
+
+section#about
+    background-color: $black2
+    text-align: center
+    position: relative
+    padding: 3%
+    color: $white
+    h2
+        font-size:1em
+        font-style: oblique
+    h3
+        font-size:1em
+        
+section#extra
+    background-color: $black2
+    padding: 2% 0 2% 0
+    text-align: center
+    box-sizing: border-box
+    color: $white 
+.nobullets
+    list-style:none
+    margin:0
+    padding:0
+    
+.grid-logo
+    display:block
+    width:75px
+    height:75px
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    border:5px solid $silver2
+    margin-bottom:30px
+    background-color: $silver2
+    margin:35px auto
+    
+#earth-holder
+    margin: 0 auto
+    max-width: 800px
+    overflow: hidden
+    
+#head-slider 
+    padding: 6em 0 1em
+    
+h2.im-nate figure 
+    max-width: 700px
+    margin: 0 auto
+    position: relative 
+    z-index: 990
+    
+h2.im-nate img 
+    width: 100%
+    display: inline-block
+    
+.H-logo 
+    max-height: 90px
+    margin:0 auto
+    
+#H-logo
+    height: 2.25em
+    margin: 22px 50px 0px 45px
+    border: 2px solid $white
+    
+.about-me
+    border-top: 1px solid $white
+    border-bottom: 1px solid $white
+    padding: 20px 0px 20px
+    width: 80%
+    margin: 0px auto
+    line-height: 3em
+    
+#work
+    background: rgba(250,250,250,0.7)
+    -webkit-box-shadow: 55px 70px 120px 135px rgba(250, 250, 250, 0.8), inset 0px 0px 70px 100px rgba(250, 250, 250,0.4)
+    -moz-box-shadow: 55px 70px 120px 135px rgba(250, 250, 250, 0.8), inset 0px 0px 70px 100px rgba(250, 250, 250,0.4)
+    box-shadow: 0px 23px 80px 90px rgba(250, 250, 250, 0.8), inset 27px 31px 179px 100px rgba(250, 250, 250,0.3)
+    padding: 15% 0 0
+    z-index: 4
+    position: relative
+    

@@ -1,0 +1,110 @@
+/* 1. Grid -------------------- */
+.u-container
+    margin: 0 auto
+    padding: 0 15px
+    @extend %clearfix
+    
+    @include medium
+        max-width: 1200px
+        
+    .u-row
+        margin: 0 -15px
+        
+    .u-row > [class*="gcol"]
+        padding: 0 15px
+        min-height: 1px
+        
+.u-largeContainer
+    @extend .u-container
+    
+    .u-row
+        margin: 0 -25px
+        
+    .u-row > [class*="gcol"]
+        padding: 0 25px
+        
+.u-row
+    @extend %clearfix
+    
+@for $i from 1 through 12
+    .gcol#{$i}
+        width: 100% / 12 * $i
+        float: left
+@media only screen and (max-width: 30em)
+    @for $i from 1 through 12
+        .xs-gcol#{$i}
+            width: 100% / 12 * $i
+            float: left
+        
+@media only screen and (min-width: 30em) and (max-width: 48em)
+    @for $i from 1 through 12
+        .s-gcol#{$i}
+            width: 100% / 12 * $i
+            float: left
+
+@media only screen and (min-width: 48em) and (max-width: 64em)
+    @for $i from 1 through 12
+        .m-gcol#{$i}
+            width: 100% / 12 * $i
+            float: left
+
+@media only screen and (min-width: 64em) and (max-width: 75em)
+    @for $i from 1 through 12
+        .l-gcol#{$i}
+            width: 100% / 12 * $i
+            float: left
+    
+section#grid
+    padding-bottom: 3em
+    text-align: center
+    position: relative
+    
+    .description
+        with: 100%
+        height: 3em
+        
+    .container
+        margin: 0 auto
+        position: relative
+        
+    .cell 
+        -webkit-transition: all 0.1s
+        -moz-transition: all 0.1s
+        transition: all 0.1s
+        border:1px solid #f0f0f0
+        cursor:pointer
+        min-height: 400px
+        
+        h2,
+        h3
+            font-size: 0.75rem
+            color:#888
+            padding:0px
+            margin:0px
+            
+        h3
+            font-weight:100
+            padding-bottom: 0.75em
+        
+        img
+            width: 100%
+            display: block
+            margin-bottom: 0.5em
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+            
+        &:hover
+            -ms-transform: scale(1.1,1.1)
+            -webkit-transform: scale(1.1,1.1)
+            transform: scale(1.1,1.1)
+            -webkit-box-shadow: 10px 10px 91px 0px rgba(193,79,82,1)
+            -moz-box-shadow: 10px 10px 91px 0px rgba(193,79,82,1)
+            box-shadow: 10px 10px 91px 0px rgba(193,79,82,1)
+            z-index:9999
+            border-right:1px solid transparent
+            border-bottom:1px solid transparent
+            cursor:pointer
+            background-color:#fff
+        
+        &:hover .grid-logo
+            background-color: #7D2B2B
+            border:5px solid #eee

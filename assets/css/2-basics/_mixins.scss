@@ -1,0 +1,87 @@
+/* --------------------------------------------
+	
+	Index
+	---
+	1. Font Sizing
+	2. Media Queries
+    3. Clearfix
+    4. WCAG Hide
+	
+
+/* 1. Font Sizing ------------------- */
+// example: p { @include font-size(12px); }
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+
+/* 2. Media Queries ------------------- */
+// example: .footer { @include medium { display:block; } }
+@mixin mobileonly {
+    @media only screen and (max-width: 48em) {
+        // < 768px
+        @content;   
+    }
+}
+
+@mixin small {
+    @media only screen and (min-width: 30em) {
+        // 480px
+        @content;
+    }
+}
+
+@mixin medium {
+    @media only screen and (min-width: 48em) {
+        // 768px
+        @content;   
+    }
+}
+
+@mixin large {
+    @media only screen and (min-width: 64em) {
+        // 1024px
+        @content;
+    }
+}
+
+@mixin x-large {    
+    @media only screen and (min-width: 75em) {
+        // 1200px
+        @content;
+    }
+}
+
+
+/* 3. Clearfix ------------------- */
+// example: .footer { @extend %clearfix }
+%clearfix {
+    *zoom: 1;
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+/* 4. WCAG Hide -------------------- */
+// exmaple: .reader-only { @extend %screenhide }
+%screenhide {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}

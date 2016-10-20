@@ -1,0 +1,312 @@
+//
+// Variables
+// ----------------------
+
+$gray: #333;
+$gray-light: #aaa;
+$gray-lighter: #eee;
+$space: 40px;
+$blue: #428bca;
+$blue-dark: darken($blue, 5%);
+
+// Mixin for transition/transform
+@mixin translate($x, $y){
+  -webkit-transform: translate($x, $y);
+      -ms-transform: translate($x, $y); // IE9+
+          transform: translate($x, $y);
+}
+@mixin transition($transition){
+  -webkit-transition: $transition;
+          transition: $transition;
+}
+@mixin transition-transform($transition){
+  -webkit-transition: -webkit-transform $transition;
+     -moz-transition: -moz-transform $transition;
+       -o-transition: -o-transform $transition;
+          transition: transform $transition;
+}
+
+//
+// Body
+// ----------------------
+.wrap{ 
+  padding: $space;
+  text-align: center;
+}
+hr {
+  clear: both;
+  margin-top: $space;
+  margin-bottom: $space;
+  border: 0;
+  border-top: 1px solid $gray-light;
+}
+h1{
+  font-size: 30px;
+  margin-bottom: $space;
+}
+p{
+  margin-bottom: $space/2;
+}
+
+//
+// Btn 
+// ----------------------
+.btn{
+    background: #54C3C9;
+    border: #225053 solid 1px;
+    border-radius: 3px;
+    color: #000;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    position: relative;
+    transition: color .1s ease;
+    &:hover{
+        background: #225053;
+        color: #FFF;
+    }
+    &.btn-big{
+        font-size: 18px;
+        padding: 15px 20px;
+        min-width: 100px;
+    }
+}
+.btn-close{
+    color: $gray-light;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute; right: 5px; top: 0;
+    &:hover{
+     color: darken($gray-light, 10%);
+    }
+}
+
+//
+// Modal
+// ----------------------
+.modal{
+    // This is modal bg
+    &:before{
+        content: ""; 
+        display: none;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0; 
+        z-index: 10;
+         background: -moz-radial-gradient(center, ellipse cover, rgba(107,248,255,1) 0%, rgba(0,112,112,1) 94%, rgba(0,112,112,1) 100%); /* ff3.6+ */
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(107,248,255,1)), color-stop(94%, rgba(0,112,112,1)), color-stop(100%, rgba(0,112,112,1))); /* safari4+,chrome */
+        background:-webkit-radial-gradient(center, ellipse cover, rgba(107,248,255,1) 0%, rgba(0,112,112,1) 94%, rgba(0,112,112,1) 100%); /* safari5.1+,chrome10+ */
+        background: -o-radial-gradient(center, ellipse cover, rgba(107,248,255,1) 0%, rgba(0,112,112,1) 94%, rgba(0,112,112,1) 100%); /* opera 11.10+ */
+        background: -ms-radial-gradient(center, ellipse cover, rgba(107,248,255,1) 0%, rgba(0,112,112,1) 94%, rgba(0,112,112,1) 100%); /* ie10+ */
+        background:radial-gradient(ellipse at center, rgba(107,248,255,1) 0%, rgba(0,112,112,1) 94%, rgba(0,112,112,1) 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6BF8FF', endColorstr='#007070',GradientType=1 ); /* ie6-9 */
+    }
+    &:target{
+    // Active animate in modal
+        &:before{
+          display: block;
+        }  
+        .modal-dialog{
+          @include translate(0, 0); 
+          top: 14%;  
+        }
+    }
+}
+
+//
+// Modal Dialog
+// ----------------------
+.modal-dialog{
+    background: transparent;
+    border-radius: 5px;
+    margin-left: -18%;
+    position: fixed; 
+    left: 50%; 
+    top: 14%;  
+    z-index: 11; 
+    width: 36%;
+    @include translate(0, -300%);
+    @include transition-transform(#{"0.3s ease-out"});
+}
+.modal-body{
+    padding: $space/2;
+}
+.modal-header,
+.modal-footer{
+    padding: $space/4 $space/2;
+}
+.modal-header{
+    border-bottom: $gray-lighter solid 1px;
+    h2{
+        font-size: 40px;
+        color: #225053;
+    }
+}
+.modal-footer{
+  border-top: $gray-lighter solid 1px;
+  text-align: right;
+}
+/*ADDED TO STOP SCROLLING TO TOP*/
+#close {
+  display: none; 
+}
+.portfolio-item {
+    margin:0 auto;
+    right:0;
+//    @media (min-width:767px) {
+//        margin:0 0 30px;
+//    }
+    .portfolio-link {
+        display:block;
+        position:relative;
+        margin:0 auto;
+        .portfolio-hover {
+            background:rgba(0, 108, 110, 0.9);
+            position:absolute;
+            width:100%;
+            height:100%;
+            opacity:0;
+            transition:all ease 0.5s;
+            -webkit-transition:all ease 0.5s;
+            -moz-transition:all ease 0.5s;
+            &:hover {
+                opacity:1;
+            }
+            .portfolio-hover-content {
+                position:absolute;
+                width:100%;
+                height:20px;
+                font-size:20px;
+                text-align:center;
+                top:50%;
+                margin-top:-12px;
+                color:#fff;
+                i {
+                   margin-top: 2em;
+                }
+                h3,h4{
+                    margin:0; 
+                }
+            }
+        }
+    }
+    .portfolio-caption {
+        max-width:400px;
+        margin:0 auto;
+        text-align:center;
+        padding:25px;
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        h4, p, h2 {
+            margin:0;
+        }
+        h4{
+            text-transform: none;
+            font-size: 26px;
+            color: #FFF;
+        }
+        h2{
+            text-transform:none;
+            font-size:20px;
+        }
+        p{
+            font-size: 20px;
+            margin: .75em;
+            color: #DDD;
+        }
+    }
+}
+* {
+   z-index:2;
+}
+.portfolio-modal{
+    .modal-dialog {
+        margin:0;
+        height: 100%;
+        width:auto;
+    }
+    .modal-content {
+        border-radius:0;
+        background-clip:border-box;
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        border:none;
+        min-height:100%;
+        padding:100px 0;
+        text-align:center;
+        h2 {
+           margin-bottom:15px;
+           font-size:3em;
+        }
+        p {
+           margin-bottom:30px;
+        }
+        p.item-intro {
+            margin:20px 0 30px;
+            font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-style:italic;
+            font-size:16px;
+        }
+        ul.list-inline {
+            margin-bottom:30px;
+            margin-top:0;
+        }
+        img {
+           margin-bottom:30px;
+        }
+        .close-modal {
+            position:absolute;
+            width:75px;
+            height:75px;
+            background-color:transparent;
+            top:25px;
+            right:25px;
+            cursor:pointer;
+            &:hover {
+                opacity:.3;
+            }
+            .lr {
+                height:75px;
+                width:1px;
+                margin-left:35px;
+                background-color:#222;
+                transform:rotate(45deg);
+                -ms-transform:rotate(45deg);
+                -webkit-transform:rotate(45deg);
+                z-index:1051;
+                .rl {
+                    height:75px;
+                    width:1px;
+                    background-color:#222;
+                    transform:rotate(90deg);
+                    -ms-transform:rotate(90deg);
+                    -webkit-transform:rotate(90deg);
+                    z-index:1052;
+                }
+            } 
+        }
+        .modal-backdrop {
+            opacity:0;
+            display:none;
+        }
+    }
+}
+.fa-3x {
+    font-size: 1.5em !important;
+}
+.cloud-blur2{
+    background: rgba(255,255,255,0.6);
+    -webkit-box-shadow: 55px 70px 120px 135px rgba(250, 250, 250, 0.8), inset 0px 0px 70px 100px rgba(250, 250, 250,0.4);
+    -moz-box-shadow: 55px 70px 120px 135px rgba(250, 250, 250, 0.8), inset 0px 0px 70px 100px rgba(250, 250, 250,0.4);
+    box-shadow: 55px 70px 120px 135px rgba(250, 250, 250, 0.8), inset 0px 0px 70px 100px rgba(250, 250, 250,0.4);
+}
+.cloud-blur{
+    background: rgba(250, 250, 250, 0.6);
+    -webkit-box-shadow: 0px -38px 200px 100px rgba(250, 250, 250, 0.8), inset 0px 0px 70px 100px rgba(250, 250, 250, 0.4);
+    -moz-box-shadow: 0px -38px 200px 100px 135px rgba(250, 250, 250, 0.8), inset 0px 0px 70px 100px rgba(250, 250, 250, 0.4);
+    box-shadow: 0px -38px 200px 100px rgba(250, 250, 250, 0.8), inset 0px 0px 70px 100px rgba(250, 250, 250, 0.6);
+}
+    
