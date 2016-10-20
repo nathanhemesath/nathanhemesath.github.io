@@ -363,7 +363,6 @@ a:hover, a:focus, a:active{text-decoration:none;color:black;}
 .u-container:after, .u-largeContainer:after, .u-row:after{clear:both;}
 .icon{display:inline-block;width:1em;height:1em;fill:currentColor;}
 .icon-paperplane{font-size:1em;color:#262626;margin-left:1px;margin-top:5px;}
-.contact{float:left;}
 .contact-section{display:inline-block;vertical-align:middle;}
 .contact-button{position:relative;display:block;margin:0 auto;width:325px;-webkit-perspective:1000;-webkit-backface-visibility:hidden;-webkit-transform:translate3d(0, 0, 0);color:#296063;text-decoration:none;text-transform:uppercase;font-family:'Raleway', sans-serif;font-weight:500;font-size:1.25em;border:2px solid #296063;border-radius:4px;padding:1em;-webkit-transition:0.3s ease-in-out;transition:0.3s ease-in-out;}
 .contact-button span{text-transform:none;position:absolute;color:#FFF;top:20px;left:30px;opacity:0;-webkit-transition:all 0s ease 0s;transition:all 0s ease 0s;}
