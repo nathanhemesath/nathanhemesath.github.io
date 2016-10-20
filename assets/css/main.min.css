@@ -544,7 +544,7 @@ header .nav-list li:first-child a{margin-left:0;}
 header .nav-list li a.active{color:#296063;}
 header .nav-list li a:hover{color:#357B7F;}
 #header-logo{-webkit-animation:fadeIn .3s ease-in-out;-moz-transition:fadeIn .3s ease-in-out;-o-transition:fadeIn .3s ease-in-out;transition:fadeIn .3s ease-in-out;overflow:hidden;width:60px;height:60px;position:relative;margin:0;padding:0;background:url("/assets/img/logo.png") center no-repeat;background-size:75%;}
-#head-slider p.header-desc{text-align:center;color:#111;padding:1.75em 0;font-size:180%;font-weight:400;font-family:'Fira Mono', monospace;}
+#head-slider p.header-desc{text-align:center;color:#111;margin:0;padding:1.25em 0;font-size:180%;font-weight:400;font-family:'Fira Mono', monospace;}
 @media (min-width:992px){header.headroom--unpinned{top:-200px;}
 }
 header.nav-root{background:inherit;}
@@ -574,7 +574,7 @@ section#extra{background-color:#222;padding:2% 0 2% 0;text-align:center;box-sizi
 .grid-logo{display:block;width:75px;height:75px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;border:5px solid #EEE;margin-bottom:30px;background-color:#EEE;margin:35px auto;}
 #earth-holder{margin:0 auto;max-width:800px;overflow:hidden;}
 #head-slider{padding:6em 0 1em;}
-h2.im-nate figure{max-width:700px;margin:0 auto;position:relative;z-index:990;}
+h2.im-nate figure{max-width:350px;margin:0 auto;position:relative;z-index:990;}
 h2.im-nate img{width:100%;display:inline-block;}
 .H-logo{max-height:90px;margin:0 auto;}
 #H-logo{height:2.25em;margin:22px 50px 0px 45px;border:2px solid #fff;}
